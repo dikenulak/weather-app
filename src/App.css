@@ -116,3 +116,10 @@ section div {
 .chart > div {
 	margin: 0 auto;
 }
+
+
+@media only screen and (max-width: 600px) {
+	.weather{
+		overflow: auto;
+	}
+}

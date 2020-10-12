@@ -37,7 +37,7 @@ const WeatherCard = observer(({ getHourlyData }) => {
 				<span onClick={slideLeft}>{'<'}</span>
 				<span onClick={slideRight}>{'>'}</span>
 			</div>
-			<div className="flex">
+			<div className="weather flex">
 				{filteredTemperature(dailyTemperature).map((temp) => (
 					<Weather key={temp.dt} temp={temp} getHourlyData={getHourlyData} unit={unit} />
 				))}
