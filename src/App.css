@@ -1,38 +1,118 @@
 .App {
-  text-align: center;
+	padding: 0 40px;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 80px;
+	pointer-events: none;
+	padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-main {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	font-size: calc(10px + 1vmin);
+	color: #1d1c1c;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.flex {
+	display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-col {
+	flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-row {
+	flex-direction: row;
+}
+
+.justify-betw {
+	justify-content: space-between;
+}
+
+.txt-center {
+	text-align: center;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.just-center {
+	justify-content: center;
+}
+
+.just-betw {
+	justify-content: space-between;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.font-sm {
+	font-size: 14px;
+}
+
+.pos-rel {
+	position: relative;
+}
+
+text {
+	font-size: 12px;
+}
+
+section.card {
+	background: #fff;
+	border: 1px solid #e5e8ed;
+	border-radius: 5px;
+	padding: 24px;
+	cursor: pointer;
+	box-shadow: 0 2px 4px rgba(3, 27, 78, 0.06);
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	margin: 10px;
+	width: 100%;
+}
+
+section.card:hover {
+	box-shadow: 0 4px 8px rgba(3, 27, 78, 0.06);
+	transform: scale(1.08);
+}
+
+section div {
+	padding: 2px;
+}
+
+.loading {
+	height: 100vh;
+	background: transparent;
+}
+
+.data-loading {
+	position: absolute;
+	background: #ffffffc2;
+	height: 100vh;
+	width: 100%;
+}
+
+.selection div {
+	display: inline-block;
+	padding: 10px;
+}
+
+.slider span {
+	font-size: calc(50px + 1.5vmin);
+	cursor: pointer;
+	color: #ff8c00;
+}
+
+.slider span:hover {
+	opacity: 0.7;
+}
+
+.chart > div {
+	margin: 0 auto;
 }
