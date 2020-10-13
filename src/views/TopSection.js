@@ -1,9 +1,9 @@
 import { observer } from 'mobx-react';
 import React from 'react';
-import LoaderHtml from './components/LoaderHtml';
-import APICall from './store/APICallStore';
-import { dateString, timeString } from './utils/dateTimeConverter';
-import { CELCIUS, FAHRENHEIHT } from './utils/enums';
+import LoaderHtml from '../components/LoaderHtml';
+import APICall from '../store/APICallStore';
+import { dateString, timeString } from '../utils/dateTimeConverter';
+import { CELCIUS, FAHRENHEIHT } from '../utils/enums';
 
 const TopSection = observer(({setUnitCallback , timezone, current}) => (
 	<section className="top-info flex flex-col justify-betw txt-center">

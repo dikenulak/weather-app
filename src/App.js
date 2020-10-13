@@ -6,8 +6,7 @@ import { dateString } from './utils/dateTimeConverter';
 import WeatherCard from './components/WeatherCard';
 import LoadingScreen from './components/LoadingScreen';
 import weatherIcon from './assets/images/clouds.svg';
-import TopSection from './TopSection';
-import ChartSection from './ChartSection';
+import { TopSection, ChartSection } from './views';
 
 const App = observer(() => {
 	const [ barchartData, setBarchartData ] = useState([]);

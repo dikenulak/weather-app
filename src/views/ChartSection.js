@@ -1,10 +1,10 @@
 import React from 'react';
-import { dateString } from './utils/dateTimeConverter';
+import { dateString } from '../utils/dateTimeConverter';
 import { HorizontalGridLines, VerticalBarSeries, VerticalGridLines, XAxis, XYPlot, YAxis } from 'react-vis';
-import { mappedData } from './utils/mapper';
+import { mappedData } from '../utils/mapper';
 import { observer } from 'mobx-react';
-import APICallStore from './store/APICallStore';
-import { CELCIUS, FAHRENHEIHT } from './utils/enums';
+import APICallStore from '../store/APICallStore';
+import { CELCIUS, FAHRENHEIHT } from '../utils/enums';
 
 const ChartSection = observer(({ tempData }) => {
 	const { unit } = APICallStore;
